@@ -1,0 +1,439 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Eden Havila KOUAME — Cybersecurity Professional</title>
+<meta name="description" content="Portfolio professionnel de Eden Havila Kouame, spécialisé en cybersécurité, sécurité réseau et sécurité des systèmes.">
+
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&family=IBM+Plex+Sans:wght@500;600;700&family=IBM+Plex+Mono:wght@400;500&display=swap" rel="stylesheet">
+
+<!-- Favicon -->
+<link rel="icon" type="image/svg+xml" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'%3E%3Crect width='32' height='32' rx='7' fill='%23080B10'/%3E%3Crect x='8' y='8' width='16' height='16' rx='4' fill='none' stroke='%2322C55E' stroke-width='2'/%3E%3Ccircle cx='16' cy='16' r='3' fill='%2322C55E'/%3E%3C/svg%3E">
+
+<!--
+  Changement de thème :
+  - Thème standard : utiliser les fichiers du dossier /css/
+  - Thème Indigo : utiliser les fichiers du dossier /css_indigo/
+
+  Exemple :
+  - pour passer au style Indigo : garder les imports /css_indigo/* et ajouter class="theme-indigo" sur body
+  - pour revenir au style standard : remplacer les imports /css_indigo/* par /css/* et retirer la classe theme-indigo
+-->
+<link rel="stylesheet" href="css/variables.css">
+<link rel="stylesheet" href="css/base.css">
+<link rel="stylesheet" href="css/components.css">
+<link rel="stylesheet" href="css/navbar.css">
+<link rel="stylesheet" href="css/hero.css">
+<link rel="stylesheet" href="css/sections.css">
+<link rel="stylesheet" href="css/contact.css">
+<link rel="stylesheet" href="css/footer.css">
+<link rel="stylesheet" href="css/responsive.css">
+</head>
+<body >
+
+<header class="nav">
+  <div class="nav-inner">
+    <a href="#top" class="logo"><span class="logo-dot"></span>Eden Havila KOUAME</a>
+    <nav id="navLinks" class="nav-links">
+      <a href="#apropos">À propos</a>
+      <a href="#expertise">Expertise</a>
+      <a href="#projets">Projets</a>
+      <a href="#experience">Expérience</a>
+      <a href="#contact">Contact</a>
+    </nav>
+    <div class="nav-cta">
+      <a href="assets/cv/Cv_KOUAME_EDEN_HAVILA_2pages_.pdf" download class="btn btn-ghost btn-small">Télécharger mon CV</a>
+      <button class="nav-toggle" id="navToggle" aria-label="Ouvrir le menu" aria-expanded="false"><span></span></button>
+    </div>
+  </div>
+</header>
+
+<main id="top">
+
+  <!-- HERO -->
+  <section class="hero">
+    <div class="wrap hero-grid">
+      <div>
+        <p class="hero-greet mono">&gt; Bonjour, je suis Eden Havila Kouame.<span class="caret"></span></p>
+        <h1>Cybersecurity <span>Professional</span></h1>
+        <p class="hero-sub">Je sécurise les infrastructures, les réseaux et les applications pour aider les organisations à réduire les risques, détecter les vulnérabilités et renforcer leur résilience numérique.</p>
+        <div class="hero-actions">
+          <a href="#projets" class="btn btn-primary">Voir mes projets</a>
+          <a href="#contact" class="btn btn-ghost">Me contacter</a>
+        </div>
+        <div class="avail"><span class="avail-dot"></span>Disponible pour des opportunités • Abidjan, Côte d'Ivoire</div>
+      </div>
+
+      <div class="hero-visual">
+        <canvas id="netCanvas" aria-hidden="true"></canvas>
+        <div class="readout">
+          <div class="readout-head">system.status</div>
+          <div class="readout-row"><span>identity</span><b>eden.hk</b></div>
+          <div class="readout-row"><span>location</span><b>abidjan, ci</b></div>
+          <div class="readout-row"><span>availability</span><b class="ok">open</b></div>
+          <div class="readout-row"><span>focus</span><b>pentest / audit</b></div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- A PROPOS -->
+  <section id="apropos">
+    <div class="wrap">
+      <div class="eyebrow">01 — profil</div>
+      <h2 class="section-title reveal">À propos</h2>
+      <div class="about-grid">
+        <div class="about-bio reveal">
+          <p>Je suis <strong>Eden Havila Kouame</strong>, professionnel de la cybersécurité basé à Abidjan, en Côte d'Ivoire. Je conçois des approches de sécurisation adaptées aux infrastructures modernes, en combinant analyse de vulnérabilités, hardening système, monitoring et sensibilisation des équipes.</p>
+          <p>Mon intérêt se porte sur la sécurisation des systèmes d'information, la réduction des surfaces d'attaque et la mise en place de contrôles techniques solides pour accompagner la croissance des organisations.</p>
+          <p>Je travaille sur la sécurité réseau, la détection d'incidents, les évaluations de posture et les bonnes pratiques d'administration système, avec une approche orientée résultats, risques et continuité de service.</p>
+          <div class="about-focus">
+            <span class="focus-tag">Cybersécurité</span>
+            <span class="focus-tag">Sécurité réseau</span>
+            <span class="focus-tag">Systèmes Linux</span>
+            <span class="focus-tag">Analyse de vulnérabilités</span>
+            <span class="focus-tag">Penetration testing</span>
+            <span class="focus-tag">Sécurité applicative</span>
+            <span class="focus-tag">Monitoring &amp; détection</span>
+            <span class="focus-tag">Gestion des risques</span>
+            <span class="focus-tag">GRC</span>
+            <span class="focus-tag">ISO 27001</span>
+            <span class="focus-tag">Audit de sécurité</span>
+            <span class="focus-tag">PCI DSS</span>
+            <span class="focus-tag">Normes réglementaires</span>
+            
+
+          </div>
+          <div class="about-points">
+            <div class="point-item"><span class="point-icon">01</span><div><strong>Évaluation de posture</strong><p>Diagnostic des systèmes, des services et des configurations exposées.</p></div></div>
+            <div class="point-item"><span class="point-icon">02</span><div><strong>Sécurisation technique</strong><p>Hardening, segmentation réseau et réduction des surfaces d'attaque.</p></div></div>
+            <div class="point-item"><span class="point-icon">03</span><div><strong>Monitoring &amp; réponse</strong><p>Suivi continu des événements et mise en place de réponses adaptées.</p></div></div>
+          </div>
+        </div>
+        <div class="stat-grid reveal">
+          <div class="stat-card card"><div class="stat-num">05+</div><div class="stat-label">Projets réalisés</div></div>
+          <div class="stat-card card"><div class="stat-num">10+</div><div class="stat-label">Technologies maîtrisées</div></div>
+          <div class="stat-card card"><div class="stat-num">03</div><div class="stat-label">Domaines d'expertise</div></div>
+          <div class="stat-card card"><div class="stat-num">02+</div><div class="stat-label">Années de pratique</div></div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- EXPERTISE -->
+  <section id="expertise">
+    <div class="wrap">
+      <div class="eyebrow">02 — compétences</div>
+      <h2 class="section-title reveal">Expertise</h2>
+      <p class="section-lede reveal">Un socle de compétences technique et méthodologique couvrant l'ensemble du cycle d'évaluation et de sécurisation d'un système d'information.</p>
+      <div class="exp-grid">
+        <div class="exp-card card card--lift reveal">
+          <h3>Cybersecurity</h3>
+          <div class="exp-tags">
+            <span class="tag">Vulnerability Assessment</span><span class="tag">Penetration Testing</span><span class="tag">Threat Modeling</span><span class="tag">Security Auditing</span><span class="tag">Incident Response</span>
+          </div>
+        </div>
+        <div class="exp-card card card--lift reveal">
+          <h3>Network Security</h3>
+          <div class="exp-tags">
+            <span class="tag">Firewalls</span><span class="tag">IDS/IPS</span><span class="tag">VPN</span><span class="tag">Network Monitoring</span><span class="tag">Network Hardening</span> <span class="tag">VLAN</span> 
+          </div>
+        </div>
+        <div class="exp-card card card--lift reveal">
+          <h3>Systems</h3>
+          <div class="exp-tags">
+            <span class="tag">Linux</span><span class="tag">Windows</span><span class="tag">Bash</span><span class="tag">Active Directory</span>
+          </div>
+        </div>
+        <div class="exp-card card card--lift reveal">
+          <h3>Tools</h3>
+          <div class="exp-tags">
+            <span class="tag">Wireshark</span><span class="tag">Nmap</span><span class="tag">Burp Suite</span><span class="tag">Metasploit</span><span class="tag">Splunk</span><span class="tag">Wazuh</span><span class="tag">Kali Linux</span> <span class="tag">Aircrak-ng</span> <span class="tag">Nesus</span> <span class="tag">OpenVAS</span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- PROJETS -->
+  <section id="projets">
+    <div class="wrap">
+      <div class="eyebrow">03 — réalisations</div>
+      <h2 class="section-title reveal">Projets sélectionnés</h2>
+      <p class="section-lede reveal">Études de cas illustrant l'approche méthodologique employée, du contexte au résultat mesurable, avec un focus sur la sécurité des systèmes, des réseaux et des applications.</p>
+      <div class="proj-grid">
+
+        <div class="proj-card card card--lift reveal">
+          <div class="proj-top"><h3>Security Monitoring Lab</h3><span class="proj-kind">SOC</span></div>
+          <div class="proj-block"><div class="lbl">Contexte</div><p>Environnement de recherche visant à centraliser les logs d'un parc Linux et Windows afin de mieux détecter les anomalies de sécurité.</p></div>
+          <div class="proj-block"><div class="lbl">Solution</div><p>Installation d'un socle de monitoring avec collecte, corrélation et règles d'alertes sur plusieurs sources de données critiques.</p></div>
+          <div class="proj-tags"><span>Wazuh</span><span>Linux</span><span>SIEM</span></div>
+          <div class="proj-block"><div class="lbl">Résultats</div><p>Centralisation de 12 sources de logs et réduction estimée du temps d'investigation de 40 % sur les incidents de sécurité.</p></div>
+          <a href="https://github.com/EdenHavila" class="proj-link" target="_blank" rel="noreferrer">Voir le dépôt GitHub →</a>
+        </div>
+
+        <div class="proj-card card card--lift reveal">
+          <div class="proj-top"><h3>Web Application Security Assessment</h3><span class="proj-kind">Audit</span></div>
+          <div class="proj-block"><div class="lbl">Contexte</div><p>Évaluation de la posture de sécurité d'une application web en vue de renforcer la protection des données et la robustesse des flux d'authentification.</p></div>
+          <div class="proj-block"><div class="lbl">Solution</div><p>Analyse des points d'entrée, gestion de session, mécanismes d'authentification, fichiers de configuration et vulnérabilités applicatives.</p></div>
+          <div class="proj-tags"><span>Burp Suite</span><span>OWASP Top 10</span><span>Nmap</span></div>
+          <div class="proj-block"><div class="lbl">Résultats</div><p>Identification de 18 vulnérabilités prioritaires, dont 8 remontées pour correction immédiate selon le niveau de risque.</p></div>
+          <a href="https://github.com/EdenHavila" class="proj-link" target="_blank" rel="noreferrer">Voir le dépôt GitHub →</a>
+        </div>
+
+        <div class="proj-card card card--lift reveal">
+          <div class="proj-top"><h3>SOC Home Lab</h3><span class="proj-kind">Lab</span></div>
+          <div class="proj-block"><div class="lbl">Contexte</div><p>Objectif de recréer un centre opérationnel de sécurité pour simuler des incidents réels et améliorer la réaction en cas d'attaque.</p></div>
+          <div class="proj-block"><div class="lbl">Solution</div><p>Mise en place d'un environnement d'analyse avec collecte de logs, détection d'indices d'intrusion et documentation des procédures de triage et réponse.</p></div>
+          <div class="proj-tags"><span>Splunk</span><span>Wireshark</span><span>Windows / Linux</span></div>
+          <div class="proj-block"><div class="lbl">Résultats</div><p>Déploiement de 3 scénarios de sécurité réels et génération de plus de 24 heures de logs pour l'analyse de comportement et la détection.</p></div>
+          <a href="https://github.com/EdenHavila" class="proj-link" target="_blank" rel="noreferrer">Voir le dépôt GitHub →</a>
+        </div>
+
+        <div class="proj-card card card--lift reveal">
+          <div class="proj-top"><h3>Network Security Architecture</h3><span class="proj-kind">Design</span></div>
+          <div class="proj-block"><div class="lbl">Contexte</div><p>Conception d'une architecture réseau segmentée pour limiter la propagation latérale et réduire la surface d'attaque d'un environnement interne.</p></div>
+          <div class="proj-block"><div class="lbl">Solution</div><p>Structuration des zones de confiance, politiques de filtrage, segmentation VLAN et contrôle des flux réseaux par défaut.</p></div>
+          <div class="proj-tags"><span>Firewalls</span><span>VLAN</span><span>VPN</span></div>
+          <div class="proj-block"><div class="lbl">Résultats</div><p>Meilleure isolation des services critiques et réduction significative du risque de propagation d'une compromission interne.</p></div>
+          <a href="https://github.com/EdenHavila" class="proj-link" target="_blank" rel="noreferrer">Voir le dépôt GitHub →</a>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- CERTIFICATIONS -->
+  <section id="certifications">
+    <div class="wrap">
+      <div class="eyebrow">04 — certifications</div>
+      <h2 class="section-title reveal">Certifications</h2>
+      <div class="cert-grid">
+        <!--
+          Modèle de carte certification.
+          - Logo optionnel : décommenter la balise <img> et pointer vers assets/certs/…
+            Sans logo, le badge textuel (initiales) s'affiche automatiquement.
+          - Lien de vérification optionnel : décommenter <a class="cert-verify">
+            et pointer vers l'URL Credly / vérification officielle.
+        -->
+        <div class="cert-card reveal">
+          <div class="cert-top">
+            <div class="cert-badge" aria-hidden="true">CS</div>
+            <div>
+              <div class="cert-name">Sécurité des systèmes</div>
+              <div class="cert-org">Formation continue</div>
+            </div>
+          </div>
+          <div class="cert-meta">
+            <span>2024</span>
+            <a href="https://github.com/EdenHavila" class="cert-verify" target="_blank" rel="noreferrer">Voir →</a>
+          </div>
+        </div>
+        <div class="cert-card reveal">
+          <div class="cert-top">
+            <div class="cert-badge" aria-hidden="true">NW</div>
+            <div>
+              <div class="cert-name">Réseaux &amp; hardening</div>
+              <div class="cert-org">Pratique technique</div>
+            </div>
+          </div>
+          <div class="cert-meta">
+            <span>2024</span>
+            <a href="https://github.com/EdenHavila" class="cert-verify" target="_blank" rel="noreferrer">Voir →</a>
+          </div>
+        </div>
+        <div class="cert-card reveal">
+          <div class="cert-top">
+            <div class="cert-badge" aria-hidden="true">IR</div>
+            <div>
+              <div class="cert-name">Analyse de vulnérabilités</div>
+              <div class="cert-org">Laboratoire &amp; exercices</div>
+            </div>
+          </div>
+          <div class="cert-meta">
+            <span>2025</span>
+            <a href="https://github.com/EdenHavila" class="cert-verify" target="_blank" rel="noreferrer">Voir →</a>
+          </div>
+        </div>
+      </div>
+      <!-- 2e ligne certifications -->
+      <div class="cert-grid">
+        <!--
+          Modèle de carte certification.
+          - Logo optionnel : décommenter la balise <img> et pointer vers assets/certs/…
+            Sans logo, le badge textuel (initiales) s'affiche automatiquement.
+          - Lien de vérification optionnel : décommenter <a class="cert-verify">
+            et pointer vers l'URL Credly / vérification officielle.
+        -->
+        <div class="cert-card reveal">
+          <div class="cert-top">
+            <div class="cert-badge" aria-hidden="true">CS</div>
+            <div>
+              <div class="cert-name">Sécurité des systèmes</div>
+              <div class="cert-org">Formation continue</div>
+            </div>
+          </div>
+          <div class="cert-meta">
+            <span>2024</span>
+            <a href="https://github.com/EdenHavila" class="cert-verify" target="_blank" rel="noreferrer">Voir →</a>
+          </div>
+        </div>
+        <div class="cert-card reveal">
+          <div class="cert-top">
+            <div class="cert-badge" aria-hidden="true">NW</div>
+            <div>
+              <div class="cert-name">Réseaux &amp; hardening</div>
+              <div class="cert-org">Pratique technique</div>
+            </div>
+          </div>
+          <div class="cert-meta">
+            <span>2024</span>
+            <a href="https://github.com/EdenHavila" class="cert-verify" target="_blank" rel="noreferrer">Voir →</a>
+          </div>
+        </div>
+        <div class="cert-card reveal">
+          <div class="cert-top">
+            <div class="cert-badge" aria-hidden="true">IR</div>
+            <div>
+              <div class="cert-name">Analyse de vulnérabilités</div>
+              <div class="cert-org">Laboratoire &amp; exercices</div>
+            </div>
+          </div>
+          <div class="cert-meta">
+            <span>2025</span>
+            <a href="https://github.com/EdenHavila" class="cert-verify" target="_blank" rel="noreferrer">Voir →</a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- EXPERIENCE -->
+  <section id="experience">
+    <div class="wrap">
+      <div class="eyebrow">05 — parcours</div>
+      <h2 class="section-title reveal">Expérience</h2>
+      <div class="timeline">
+        <div class="tl-item reveal">
+          <div class="tl-head"><h3>Consultant cybersécurité — tests d'intrusion</h3><span class="tl-period mono">Mai 2026 — Aujourd'hui</span></div>
+          <div class="tl-company">Missions freelance / appui sécurité</div>
+          <ul>
+            <li>Conduite de tests d'intrusion applicatifs autorisés sur des environnements de production, avec structuration des constats selon les référentiels CVSS et CWE.</li>
+            <li>Renforcement des contrôles de sécurité, documentation des vulnérabilités et recommandations d'amélioration.</li>
+          </ul>
+        </div>
+        <div class="tl-item reveal">
+          <div class="tl-head"><h3>Formateur &amp; concepteur de contenu en cybersécurité</h3><span class="tl-period mono">Juin 2026 — Aujourd'hui</span></div>
+          <div class="tl-company">GSIMEL</div>
+          <ul>
+            <li>Conception de supports de formation et d'audit couvrant l'audit de conformité ISO/IEC 27001, le benchmarking CIS et les référentiels ANSSI, NIST et MITRE ATT&amp;CK, ainsi que la préparation aux certifications offensives (CEH, CPENT).</li>
+            <li>Contribution à la démocratisation de l'accès aux parcours de certification en cybersécurité pour le public francophone, à travers une bibliothèque de ressources et un accompagnement pédagogique structuré.</li>
+          </ul>
+        </div>
+        <div class="tl-item reveal">
+          <div class="tl-head"><h3>Analyste sécurité système</h3><span class="tl-period mono">2023 — 2024</span></div>
+          <div class="tl-company">Environnement de laboratoire &amp; projets techniques</div>
+          <ul>
+            <li>Installation et sécurisation de serveurs Linux, Firewall et services réseau.</li>
+            <li>Analyse de logs, détection de comportements suspects et mise en place de règles de surveillance.</li>
+          </ul>
+        </div>
+        <!-- à dupliquer -->
+        <div class="tl-item reveal">
+          <div class="tl-head"><h3>Consultant cybersécurité</h3><span class="tl-period mono">2024 — Aujourd'hui</span></div>
+          <div class="tl-company">Missions freelance / appui sécurité</div>
+          <ul>
+            <li>Conduite d'analyses de sécurité sur des infrastructures et applications.</li>
+            <li>Renforcement des contrôles de sécurité, documentation des vulnérabilités et recommandations d'amélioration.</li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ACTIVITE -->
+  <section id="activite">
+    <div class="wrap">
+      <div class="eyebrow">06 — activité technique</div>
+      <h2 class="section-title reveal">GitHub &amp; laboratoires</h2>
+      <p class="section-lede reveal">Suivi et documentation continue des travaux techniques, expérimentations et contributions.</p>
+      <div class="activity-grid">
+        <div class="activity-card card reveal">
+          <h3>GitHub</h3>
+          <p>Repositories et scripts liés aux audits et outils de sécurité.</p>
+          <a href="https://github.com/EdenHavila" target="_blank" rel="noreferrer">github.com/EdenHavila →</a>
+        </div>
+        <div class="activity-card card reveal">
+          <h3>Projets open source</h3>
+          <p>Contributions et outils publiés en accès libre.</p>
+          <a href="https://github.com/EdenHavila" target="_blank" rel="noreferrer">github.com/EdenHavila →</a>
+        </div>
+        <div class="activity-card card reveal">
+          <h3>Labs de cybersécurité</h3>
+          <p>Environnements d'entraînement et de recherche personnels.</p>
+          <a href="https://github.com/EdenHavila" target="_blank" rel="noreferrer">github.com/EdenHavila →</a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- CONTACT -->
+  <section id="contact">
+    <div class="wrap">
+      <div class="contact-band reveal">
+        <div class="contact-top">
+          <div class="eyebrow">07 — contact</div>
+          <h2>Construisons un environnement numérique plus sûr.</h2>
+          <p>Disponible pour des missions d'audit, de test d'intrusion ou de conseil en sécurité. N'hésitez pas à me contacter.</p>
+        </div>
+        <div class="contact-grid">
+          <ul class="contact-info">
+            <li><span class="lbl">Email</span><a href="mailto:edenhavila65@gmail.com">edenhavila65@gmail.com</a></li>
+            <li><span class="lbl">LinkedIn</span><a href="https://www.linkedin.com/in/eden-havila-kouame-9951b6363/" target="_blank" rel="noreferrer">Eden Havila Kouame</a></li>
+            <li><span class="lbl">GitHub</span><a href="https://github.com/EdenHavila" target="_blank" rel="noreferrer">EdenHavila</a></li>
+            <li><span class="lbl">Localisation</span><span>Abidjan, Côte d'Ivoire</span></li>
+            <li><span class="lbl">Téléphone</span><span>+225 05 65 43 25 50</span></li>
+          </ul>
+          <form id="contactForm" novalidate action="https://formspree.io/f/xdenbdzv" method="POST">
+            <div class="form-row">
+              <label for="cf-name">Nom</label>
+              <input id="cf-name" type="text" required autocomplete="name" name="nom">
+            </div>
+            <div class="form-row">
+              <label for="cf-email">Email</label>
+              <input id="cf-email" type="email" required autocomplete="email" name="email">
+            </div>
+            <div class="form-row">
+              <label for="cf-msg">Message</label>
+              <textarea id="cf-msg" required name="message"></textarea>
+            </div>
+            <button type="submit" class="btn btn-primary">Envoyer</button>
+            <p class="form-note" id="formNote" role="status" aria-live="polite"></p>
+          </form>
+        </div>
+      </div>
+    </div>
+  </section>
+
+</main>
+
+<footer>
+  <div class="wrap footer-inner">
+    <p>© 2026 Eden Havila Kouame — Cybersecurity Professional</p>
+    <p class="footer-meta">
+      <span class="footer-location">Abidjan, Côte d'Ivoire</span>
+      <span class="footer-separator">•</span>
+      <span class="footer-status"><span class="status-dot" aria-hidden="true"></span>Open to work</span>
+    </p>
+    <a href="#top" class="back-top">Retour en haut ↑</a>
+  </div>
+</footer>
+
+<!-- Point d'entrée JS unique — modules ES importés depuis js/main.js -->
+<script type="module" src="js/main.js"></script>
+
+</body>
+</html>

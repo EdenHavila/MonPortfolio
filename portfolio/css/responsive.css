@@ -1,0 +1,12 @@
+/* ==========================================================================
+   RESPONSIVE — ajustements globaux, transverses à plusieurs composants.
+   Les ajustements propres à un composant restent dans son fichier dédié
+   (voir hero.css, sections.css, contact.css) pour rester à proximité
+   du code qu'ils modifient.
+   ========================================================================== */
+
+@media (max-width: 600px) {
+  section {
+    padding: 76px 0;
+  }
+}
