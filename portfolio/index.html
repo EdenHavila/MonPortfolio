@@ -11,7 +11,7 @@
 <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&family=IBM+Plex+Sans:wght@500;600;700&family=IBM+Plex+Mono:wght@400;500&display=swap" rel="stylesheet">
 
 <!-- Favicon -->
-<link rel="icon" type="image/svg+xml" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'%3E%3Crect width='32' height='32' rx='7' fill='%23080B10'/%3E%3Crect x='8' y='8' width='16' height='16' rx='4' fill='none' stroke='%2322C55E' stroke-width='2'/%3E%3Ccircle cx='16' cy='16' r='3' fill='%2322C55E'/%3E%3C/svg%3E">
+<link id="favicon" rel="icon" type="image/svg+xml" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'%3E%3Crect width='32' height='32' rx='7' fill='%23080B10'/%3E%3Crect x='8' y='8' width='16' height='16' rx='4' fill='none' stroke='%2322C55E' stroke-width='2'/%3E%3Ccircle cx='16' cy='16' r='3' fill='%2322C55E'/%3E%3C/svg%3E">
 
 <!--
   Changement de thème :
@@ -22,15 +22,22 @@
   - pour passer au style Indigo : garder les imports /css_indigo/* et ajouter class="theme-indigo" sur body
   - pour revenir au style standard : remplacer les imports /css_indigo/* par /css/* et retirer la classe theme-indigo
 -->
-<link rel="stylesheet" href="css/variables.css">
-<link rel="stylesheet" href="css/base.css">
-<link rel="stylesheet" href="css/components.css">
-<link rel="stylesheet" href="css/navbar.css">
-<link rel="stylesheet" href="css/hero.css">
-<link rel="stylesheet" href="css/sections.css">
-<link rel="stylesheet" href="css/contact.css">
-<link rel="stylesheet" href="css/footer.css">
-<link rel="stylesheet" href="css/responsive.css">
+<link rel="stylesheet" href="css_indigo/variables.css">
+<link rel="stylesheet" href="css_indigo/base.css">
+<link rel="stylesheet" href="css_indigo/components.css">
+<link rel="stylesheet" href="css_indigo/navbar.css">
+<link rel="stylesheet" href="css_indigo/hero.css">
+<link rel="stylesheet" href="css_indigo/sections.css">
+<link rel="stylesheet" href="css_indigo/contact.css">
+<link rel="stylesheet" href="css_indigo/footer.css">
+<link rel="stylesheet" href="css_indigo/responsive.css">
+<script>
+  const favicon = document.querySelector('#favicon');
+  const isIndigoTheme = document.querySelector('link[href*="css_indigo/"]');
+  const accent = isIndigoTheme ? '%236366F1' : '%2322C55E';
+
+  favicon.href = `data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'%3E%3Crect width='32' height='32' rx='7' fill='%23080B10'/%3E%3Crect x='8' y='8' width='16' height='16' rx='4' fill='none' stroke='${accent}' stroke-width='2'/%3E%3Ccircle cx='16' cy='16' r='3' fill='${accent}'/%3E%3C/svg%3E`;
+</script>
 </head>
 <body >
 
@@ -97,27 +104,27 @@
             <span class="focus-tag">Analyse de vulnérabilités</span>
             <span class="focus-tag">Penetration testing</span>
             <span class="focus-tag">Sécurité applicative</span>
-            <span class="focus-tag">Monitoring &amp; détection</span>
+            <!-- <span class="focus-tag">Monitoring &amp; détection</span> -->
             <span class="focus-tag">Gestion des risques</span>
-            <span class="focus-tag">GRC</span>
-            <span class="focus-tag">ISO 27001</span>
+            <!-- <span class="focus-tag">GRC</span> -->
+            <!-- <span class="focus-tag">ISO 27001</span> -->
             <span class="focus-tag">Audit de sécurité</span>
-            <span class="focus-tag">PCI DSS</span>
-            <span class="focus-tag">Normes réglementaires</span>
+            <!-- <span class="focus-tag">PCI DSS</span> -->
+            <!-- <span class="focus-tag">Normes réglementaires</span> -->
             
 
           </div>
           <div class="about-points">
             <div class="point-item"><span class="point-icon">01</span><div><strong>Évaluation de posture</strong><p>Diagnostic des systèmes, des services et des configurations exposées.</p></div></div>
             <div class="point-item"><span class="point-icon">02</span><div><strong>Sécurisation technique</strong><p>Hardening, segmentation réseau et réduction des surfaces d'attaque.</p></div></div>
-            <div class="point-item"><span class="point-icon">03</span><div><strong>Monitoring &amp; réponse</strong><p>Suivi continu des événements et mise en place de réponses adaptées.</p></div></div>
+            <div class="point-item"><span class="point-icon">03</span><div><strong>Analyse &amp; amélioration</strong><p>Détection et analyse des vulnérabilités, avec élaboration de recommandations visant à réduire les risques et renforcer la sécurité des environnements.</p></div></div>
           </div>
         </div>
         <div class="stat-grid reveal">
-          <div class="stat-card card"><div class="stat-num">05+</div><div class="stat-label">Projets réalisés</div></div>
+          <div class="stat-card card"><div class="stat-num">05+</div><div class="stat-label">Projets réalisés (confidentiels)</div></div>
           <div class="stat-card card"><div class="stat-num">10+</div><div class="stat-label">Technologies maîtrisées</div></div>
-          <div class="stat-card card"><div class="stat-num">03</div><div class="stat-label">Domaines d'expertise</div></div>
-          <div class="stat-card card"><div class="stat-num">02+</div><div class="stat-label">Années de pratique</div></div>
+          <div class="stat-card card"><div class="stat-num">03+</div><div class="stat-label">Domaines d'expertise</div></div>
+          <div class="stat-card card"><div class="stat-num">02</div><div class="stat-label">Années de pratique</div></div>
         </div>
       </div>
     </div>
@@ -139,19 +146,19 @@
         <div class="exp-card card card--lift reveal">
           <h3>Network Security</h3>
           <div class="exp-tags">
-            <span class="tag">Firewalls</span><span class="tag">IDS/IPS</span><span class="tag">VPN</span><span class="tag">Network Monitoring</span><span class="tag">Network Hardening</span> <span class="tag">VLAN</span> 
+            <span class="tag">Firewalls</span><span class="tag">IDS/IPS</span><span class="tag">VPN</span><span class="tag">Network Monitoring</span><span class="tag">Network Hardening</span> <span class="tag">VLAN</span> <span class="tag">Network Segmentation</span> <span class="tag">ACL</span>
           </div>
         </div>
         <div class="exp-card card card--lift reveal">
-          <h3>Systems</h3>
+          <h3>Systems & Cloud</h3>
           <div class="exp-tags">
-            <span class="tag">Linux</span><span class="tag">Windows</span><span class="tag">Bash</span><span class="tag">Active Directory</span>
+            <span class="tag">Linux</span><span class="tag">Windows</span><span class="tag">Active Directory</span><span class="tag">Terraform</span><span class="tag">Azure</span>
           </div>
         </div>
         <div class="exp-card card card--lift reveal">
           <h3>Tools</h3>
           <div class="exp-tags">
-            <span class="tag">Wireshark</span><span class="tag">Nmap</span><span class="tag">Burp Suite</span><span class="tag">Metasploit</span><span class="tag">Splunk</span><span class="tag">Wazuh</span><span class="tag">Kali Linux</span> <span class="tag">Aircrak-ng</span> <span class="tag">Nesus</span> <span class="tag">OpenVAS</span>
+            <span class="tag">Wireshark</span><span class="tag">Nmap</span><span class="tag">Burp Suite</span><span class="tag">Metasploit</span><span class="tag">Hashcat</span><span class="tag">Hydra</span><span class="tag">Kali Linux</span> <span class="tag">Aircrak-ng</span> <span class="tag">Nesus</span> <span class="tag">OpenVAS</span>
           </div>
         </div>
       </div>
@@ -166,41 +173,41 @@
       <p class="section-lede reveal">Études de cas illustrant l'approche méthodologique employée, du contexte au résultat mesurable, avec un focus sur la sécurité des systèmes, des réseaux et des applications.</p>
       <div class="proj-grid">
 
-        <div class="proj-card card card--lift reveal">
+        <!-- <div class="proj-card card card--lift reveal">
           <div class="proj-top"><h3>Security Monitoring Lab</h3><span class="proj-kind">SOC</span></div>
           <div class="proj-block"><div class="lbl">Contexte</div><p>Environnement de recherche visant à centraliser les logs d'un parc Linux et Windows afin de mieux détecter les anomalies de sécurité.</p></div>
           <div class="proj-block"><div class="lbl">Solution</div><p>Installation d'un socle de monitoring avec collecte, corrélation et règles d'alertes sur plusieurs sources de données critiques.</p></div>
           <div class="proj-tags"><span>Wazuh</span><span>Linux</span><span>SIEM</span></div>
           <div class="proj-block"><div class="lbl">Résultats</div><p>Centralisation de 12 sources de logs et réduction estimée du temps d'investigation de 40 % sur les incidents de sécurité.</p></div>
           <a href="https://github.com/EdenHavila" class="proj-link" target="_blank" rel="noreferrer">Voir le dépôt GitHub →</a>
-        </div>
+        </div> -->
 
         <div class="proj-card card card--lift reveal">
-          <div class="proj-top"><h3>Web Application Security Assessment</h3><span class="proj-kind">Audit</span></div>
-          <div class="proj-block"><div class="lbl">Contexte</div><p>Évaluation de la posture de sécurité d'une application web en vue de renforcer la protection des données et la robustesse des flux d'authentification.</p></div>
-          <div class="proj-block"><div class="lbl">Solution</div><p>Analyse des points d'entrée, gestion de session, mécanismes d'authentification, fichiers de configuration et vulnérabilités applicatives.</p></div>
-          <div class="proj-tags"><span>Burp Suite</span><span>OWASP Top 10</span><span>Nmap</span></div>
-          <div class="proj-block"><div class="lbl">Résultats</div><p>Identification de 18 vulnérabilités prioritaires, dont 8 remontées pour correction immédiate selon le niveau de risque.</p></div>
-          <a href="https://github.com/EdenHavila" class="proj-link" target="_blank" rel="noreferrer">Voir le dépôt GitHub →</a>
+          <div class="proj-top"><h3>Web Application Security Assessment</h3><span class="proj-kind">Pentest</span></div>
+          <div class="proj-block"><div class="lbl">Contexte</div><p>Évaluation de la sécurité d'une application web (firstygodmusic) dans son environnement de préproduction en vue de renforcer la protection des données et la robustesse des flux d'authentification. Les tests ont été réalisés selon une approche en boîte noire.</p></div>
+          <div class="proj-block"><div class="lbl">Actions</div><p>Analyse des surfaces d'exposition, mécanismes d'authentification, gestion des sessions, configurations et contrôles de sécurité applicatifs.</p></div>
+          <div class="proj-tags"><span>Burp Suite</span><span>OWASP Top 10</span><span>Nmap</span> <span>OWASP ZAP</span><span>SQLMap</span> <span>Nikto</span> <span>Nuclei</span> <span>testssl</span> <span>dig</span> <span>Subfinder</span> <span>Curl</span></div>
+          <div class="proj-block"><div class="lbl">Résultats</div><p>Identification de 13 vulnérabilités, dont 3 considérées comme prioritaires au regard de leur niveau de risque.</p></div>
+          <a href="https://github.com/EdenHavila/Cybersecurity/tree/main/Projects/Web-Pentest/firstygodmusic" class="proj-link" target="_blank" rel="noreferrer">Voir le dépôt GitHub →</a>
         </div>
 
-        <div class="proj-card card card--lift reveal">
+        <!-- <div class="proj-card card card--lift reveal">
           <div class="proj-top"><h3>SOC Home Lab</h3><span class="proj-kind">Lab</span></div>
           <div class="proj-block"><div class="lbl">Contexte</div><p>Objectif de recréer un centre opérationnel de sécurité pour simuler des incidents réels et améliorer la réaction en cas d'attaque.</p></div>
           <div class="proj-block"><div class="lbl">Solution</div><p>Mise en place d'un environnement d'analyse avec collecte de logs, détection d'indices d'intrusion et documentation des procédures de triage et réponse.</p></div>
           <div class="proj-tags"><span>Splunk</span><span>Wireshark</span><span>Windows / Linux</span></div>
           <div class="proj-block"><div class="lbl">Résultats</div><p>Déploiement de 3 scénarios de sécurité réels et génération de plus de 24 heures de logs pour l'analyse de comportement et la détection.</p></div>
           <a href="https://github.com/EdenHavila" class="proj-link" target="_blank" rel="noreferrer">Voir le dépôt GitHub →</a>
-        </div>
+        </div> -->
 
-        <div class="proj-card card card--lift reveal">
+        <!-- <div class="proj-card card card--lift reveal">
           <div class="proj-top"><h3>Network Security Architecture</h3><span class="proj-kind">Design</span></div>
           <div class="proj-block"><div class="lbl">Contexte</div><p>Conception d'une architecture réseau segmentée pour limiter la propagation latérale et réduire la surface d'attaque d'un environnement interne.</p></div>
           <div class="proj-block"><div class="lbl">Solution</div><p>Structuration des zones de confiance, politiques de filtrage, segmentation VLAN et contrôle des flux réseaux par défaut.</p></div>
           <div class="proj-tags"><span>Firewalls</span><span>VLAN</span><span>VPN</span></div>
           <div class="proj-block"><div class="lbl">Résultats</div><p>Meilleure isolation des services critiques et réduction significative du risque de propagation d'une compromission interne.</p></div>
           <a href="https://github.com/EdenHavila" class="proj-link" target="_blank" rel="noreferrer">Voir le dépôt GitHub →</a>
-        </div>
+        </div> -->
 
       </div>
     </div>
@@ -211,6 +218,7 @@
     <div class="wrap">
       <div class="eyebrow">04 — certifications</div>
       <h2 class="section-title reveal">Certifications</h2>
+      <!-- 1e ligne certifications -->
       <div class="cert-grid">
         <!--
           Modèle de carte certification.
@@ -221,44 +229,45 @@
         -->
         <div class="cert-card reveal">
           <div class="cert-top">
-            <div class="cert-badge" aria-hidden="true">CS</div>
+            <div class="cert-badge" aria-hidden="true">CPENT</div>
             <div>
-              <div class="cert-name">Sécurité des systèmes</div>
-              <div class="cert-org">Formation continue</div>
+              <div class="cert-name">Certification Ethical Hacker</div>
+              <div class="cert-org">EC-Council</div>
             </div>
           </div>
           <div class="cert-meta">
-            <span>2024</span>
-            <a href="https://github.com/EdenHavila" class="cert-verify" target="_blank" rel="noreferrer">Voir →</a>
+            <span> Certification visée </span>
+            <!-- <a href="##" class="cert-verify" target="_blank" rel="noreferrer">Voir →</a> -->
           </div>
         </div>
         <div class="cert-card reveal">
           <div class="cert-top">
-            <div class="cert-badge" aria-hidden="true">NW</div>
+            <div class="cert-badge" aria-hidden="true">ISO 27001</div>
             <div>
-              <div class="cert-name">Réseaux &amp; hardening</div>
-              <div class="cert-org">Pratique technique</div>
+              <div class="cert-name">ISO 27001 lead implementor</div>
+              <div class="cert-org">Information Security Management Systems </div>
             </div>
           </div>
           <div class="cert-meta">
-            <span>2024</span>
-            <a href="https://github.com/EdenHavila" class="cert-verify" target="_blank" rel="noreferrer">Voir →</a>
+            <span> Certification visée </span>
+            <!-- <a href="##" class="cert-verify" target="_blank" rel="noreferrer">Voir →</a> -->
           </div>
         </div>
         <div class="cert-card reveal">
           <div class="cert-top">
-            <div class="cert-badge" aria-hidden="true">IR</div>
+            <div class="cert-badge" aria-hidden="true">CISA</div>
             <div>
-              <div class="cert-name">Analyse de vulnérabilités</div>
-              <div class="cert-org">Laboratoire &amp; exercices</div>
+              <div class="cert-name">Certified Information Systems Auditor</div>
+              <div class="cert-org">ISACA</div>
             </div>
           </div>
           <div class="cert-meta">
-            <span>2025</span>
-            <a href="https://github.com/EdenHavila" class="cert-verify" target="_blank" rel="noreferrer">Voir →</a>
+            <span> Certification visée </span>
+            <!-- <a href="##" class="cert-verify" target="_blank" rel="noreferrer">Voir →</a> -->
           </div>
         </div>
       </div>
+      
       <!-- 2e ligne certifications -->
       <div class="cert-grid">
         <!--
@@ -270,43 +279,143 @@
         -->
         <div class="cert-card reveal">
           <div class="cert-top">
-            <div class="cert-badge" aria-hidden="true">CS</div>
+            <div class="cert-badge" aria-hidden="true">CEH</div>
             <div>
-              <div class="cert-name">Sécurité des systèmes</div>
-              <div class="cert-org">Formation continue</div>
+              <div class="cert-name">Certification Ethical Hacker</div>
+              <div class="cert-org">EC-Council</div>
             </div>
           </div>
           <div class="cert-meta">
-            <span>2024</span>
-            <a href="https://github.com/EdenHavila" class="cert-verify" target="_blank" rel="noreferrer">Voir →</a>
+            <span> En préparation </span>
+            <!-- <a href="##" class="cert-verify" target="_blank" rel="noreferrer">Voir →</a> -->
           </div>
         </div>
         <div class="cert-card reveal">
           <div class="cert-top">
-            <div class="cert-badge" aria-hidden="true">NW</div>
+            <div class="cert-badge" aria-hidden="true">EHE</div>
             <div>
-              <div class="cert-name">Réseaux &amp; hardening</div>
-              <div class="cert-org">Pratique technique</div>
+              <div class="cert-name">Ethical Hacking Essential</div>
+              <div class="cert-org">EC-Council</div>
             </div>
           </div>
           <div class="cert-meta">
-            <span>2024</span>
-            <a href="https://github.com/EdenHavila" class="cert-verify" target="_blank" rel="noreferrer">Voir →</a>
+            <span> En préparation </span>
+            <!-- <a href="##" class="cert-verify" target="_blank" rel="noreferrer">Voir →</a> -->
           </div>
         </div>
         <div class="cert-card reveal">
           <div class="cert-top">
-            <div class="cert-badge" aria-hidden="true">IR</div>
+            <div class="cert-badge" aria-hidden="true">CS+</div>
             <div>
-              <div class="cert-name">Analyse de vulnérabilités</div>
-              <div class="cert-org">Laboratoire &amp; exercices</div>
+              <div class="cert-name">Comptia Security+</div>
+              <div class="cert-org">CompTIA</div>
             </div>
           </div>
           <div class="cert-meta">
-            <span>2025</span>
-            <a href="https://github.com/EdenHavila" class="cert-verify" target="_blank" rel="noreferrer">Voir →</a>
+            <span> En préparation </span>
+            <!-- <a href="##" class="cert-verify" target="_blank" rel="noreferrer">Voir →</a> -->
           </div>
         </div>
+      </div>
+
+      <!-- 3e ligne certifications -->
+      <div class="cert-grid">
+        <!--
+          Modèle de carte certification.
+          - Logo optionnel : décommenter la balise <img> et pointer vers assets/certs/…
+            Sans logo, le badge textuel (initiales) s'affiche automatiquement.
+          - Lien de vérification optionnel : décommenter <a class="cert-verify">
+            et pointer vers l'URL Credly / vérification officielle.
+        -->
+        <div class="cert-card reveal">
+          <div class="cert-top">
+            <div class="cert-badge" aria-hidden="true">CS+</div>
+            <div>
+              <div class="cert-name">Comptia Server+</div>
+              <div class="cert-org">CompTIA</div>
+            </div>
+          </div>
+          <div class="cert-meta">
+            <span> En préparation </span>
+            <!-- <a href="##" class="cert-verify" target="_blank" rel="noreferrer">Voir →</a> -->
+          </div>
+        </div>
+        <div class="cert-card reveal">
+          <div class="cert-top">
+            <div class="cert-badge" aria-hidden="true">NDE</div>
+            <div>
+              <div class="cert-name">Network Defense Essentials</div>
+              <div class="cert-org">EC-Council</div>
+            </div>
+          </div>
+          <div class="cert-meta">
+            <span> En préparation </span>
+            <!-- <a href="##" class="cert-verify" target="_blank" rel="noreferrer">Voir →</a> -->
+          </div>
+        </div>
+        <div class="cert-card reveal">
+          <div class="cert-top">
+            <div class="cert-badge" aria-hidden="true">CCNA</div>
+            <div>
+              <div class="cert-name">Cisco Certified Network Associate</div>
+              <div class="cert-org">Cisco</div>
+            </div>
+          </div>
+          <div class="cert-meta">
+            <span>2026</span>
+            <a href="https://www.credly.com/badges/2c971129-9c36-4b6e-87d0-f7957c07c890/public_url" class="cert-verify" target="_blank" rel="noreferrer">Voir →</a>
+          </div>
+        </div>
+      </div>
+
+      <!-- 4e ligne certifications -->
+      <div class="cert-grid">
+        <!--
+          Modèle de carte certification.
+          - Logo optionnel : décommenter la balise <img> et pointer vers assets/certs/…
+            Sans logo, le badge textuel (initiales) s'affiche automatiquement.
+          - Lien de vérification optionnel : décommenter <a class="cert-verify">
+            et pointer vers l'URL Credly / vérification officielle.
+        -->
+        <div class="cert-card reveal">
+          <div class="cert-top">
+            <div class="cert-badge" aria-hidden="true">LE</div>
+            <div>
+              <div class="cert-name">Linux Essentials</div>
+              <div class="cert-org">Cisco</div>
+            </div>
+          </div>
+          <div class="cert-meta">
+            <span>2026</span>
+            <a href="https://www.credly.com/badges/1169efa5-ac0b-4520-aad8-244eafd48882/public_url" class="cert-verify" target="_blank" rel="noreferrer">Voir →</a>
+          </div>
+        </div>
+        <!-- <div class="cert-card reveal">
+          <div class="cert-top">
+            <div class="cert-badge" aria-hidden="true">NDE</div>
+            <div>
+              <div class="cert-name">Network Defense Essentials</div>
+              <div class="cert-org">EC-Council</div>
+            </div>
+          </div>
+          <div class="cert-meta">
+            <span>2026</span>
+            <a href="https://github.com/EdenHavila" class="cert-verify" target="_blank" rel="noreferrer">Voir →</a>
+          </div>
+        </div> -->
+        <!-- <div class="cert-card reveal">
+          <div class="cert-top">
+            <div class="cert-badge" aria-hidden="true">CCNA</div>
+            <div>
+              <div class="cert-name">Cisco Certified Network Associate</div>
+              <div class="cert-org">Cisco</div>
+            </div>
+          </div>
+          <div class="cert-meta">
+            <span>2026</span>
+            <a href="https://www.credly.com/badges/2c971129-9c36-4b6e-87d0-f7957c07c890/public_url" class="cert-verify" target="_blank" rel="noreferrer">Voir →</a>
+          </div>
+        </div> -->
       </div>
     </div>
   </section>
@@ -329,27 +438,34 @@
           <div class="tl-head"><h3>Formateur &amp; concepteur de contenu en cybersécurité</h3><span class="tl-period mono">Juin 2026 — Aujourd'hui</span></div>
           <div class="tl-company">GSIMEL</div>
           <ul>
-            <li>Conception de supports de formation et d'audit couvrant l'audit de conformité ISO/IEC 27001, le benchmarking CIS et les référentiels ANSSI, NIST et MITRE ATT&amp;CK, ainsi que la préparation aux certifications offensives (CEH, CPENT).</li>
+            <li>Conception de supports de formation couvrant le pentest, l'audit technique, ainsi que la préparation aux certifications offensives (CEH, CPENT).</li>
             <li>Contribution à la démocratisation de l'accès aux parcours de certification en cybersécurité pour le public francophone, à travers une bibliothèque de ressources et un accompagnement pédagogique structuré.</li>
+            <li>Sensibilisation des utilisateurs aux enjeux de la cybersécurité et aux bonnes pratiques de protection des données.</li>
           </ul>
         </div>
         <div class="tl-item reveal">
-          <div class="tl-head"><h3>Analyste sécurité système</h3><span class="tl-period mono">2023 — 2024</span></div>
-          <div class="tl-company">Environnement de laboratoire &amp; projets techniques</div>
+          <div class="tl-head"><h3>Stagiaire en Cybersécurité & Sécurité des Systèmes d’Information.</h3><span class="tl-period mono">Novembre 2024 — Aout 2025</span></div>
+          <div class="tl-company">Nouvelle Compagnie Africaine de Réassurance (NCA Re)</div>
           <ul>
-            <li>Installation et sécurisation de serveurs Linux, Firewall et services réseau.</li>
-            <li>Analyse de logs, détection de comportements suspects et mise en place de règles de surveillance.</li>
+            <li>Participation à la surveillance et au suivi de la sécurité des systèmes d’information.</li>
+            <li>Analyse des alertes et événements de sécurité.</li>
+            <li>Contribution à l’identification des vulnérabilités et des risques.</li>
+            <li>Réalisation de contrôles de sécurité sur les postes et infrastructures.</li>
+            <li>Participation au traitement et au suivi des incidents de sécurité.</li>
+            <li>Application des bonnes pratiques de sécurité réseau et système.</li>
+            <li>Assistance aux utilisateurs en matière de bonnes pratiques de sécurité.</li>
+            <li>Création de la plateforme de Gestion des demandes de biens et services avec django.</li>
           </ul>
         </div>
         <!-- à dupliquer -->
-        <div class="tl-item reveal">
+        <!-- <div class="tl-item reveal">
           <div class="tl-head"><h3>Consultant cybersécurité</h3><span class="tl-period mono">2024 — Aujourd'hui</span></div>
-          <div class="tl-company">Missions freelance / appui sécurité</div>
+          <div class="tl-company">Environnement de laboratoire &amp; projets techniques</div>
           <ul>
             <li>Conduite d'analyses de sécurité sur des infrastructures et applications.</li>
             <li>Renforcement des contrôles de sécurité, documentation des vulnérabilités et recommandations d'amélioration.</li>
           </ul>
-        </div>
+        </div> -->
       </div>
     </div>
   </section>
@@ -364,17 +480,17 @@
         <div class="activity-card card reveal">
           <h3>GitHub</h3>
           <p>Repositories et scripts liés aux audits et outils de sécurité.</p>
-          <a href="https://github.com/EdenHavila" target="_blank" rel="noreferrer">github.com/EdenHavila →</a>
+          <!-- <a href="https://github.com/EdenHavila" target="_blank" rel="noreferrer">github.com/EdenHavila →</a> -->
         </div>
         <div class="activity-card card reveal">
           <h3>Projets open source</h3>
           <p>Contributions et outils publiés en accès libre.</p>
-          <a href="https://github.com/EdenHavila" target="_blank" rel="noreferrer">github.com/EdenHavila →</a>
+          <!-- <a href="https://github.com/EdenHavila" target="_blank" rel="noreferrer">github.com/EdenHavila →</a> -->
         </div>
         <div class="activity-card card reveal">
           <h3>Labs de cybersécurité</h3>
           <p>Environnements d'entraînement et de recherche personnels.</p>
-          <a href="https://github.com/EdenHavila" target="_blank" rel="noreferrer">github.com/EdenHavila →</a>
+          <!-- <a href="https://github.com/EdenHavila" target="_blank" rel="noreferrer">github.com/EdenHavila →</a> -->
         </div>
       </div>
     </div>
@@ -391,7 +507,7 @@
         </div>
         <div class="contact-grid">
           <ul class="contact-info">
-            <li><span class="lbl">Email</span><a href="mailto:edenhavila65@gmail.com">edenhavila65@gmail.com</a></li>
+            <li><span class="lbl">Email</span><a href="mailto:edenhavila.k6598@gmail.com">edenhavila.k6598@gmail.com</a></li>
             <li><span class="lbl">LinkedIn</span><a href="https://www.linkedin.com/in/eden-havila-kouame-9951b6363/" target="_blank" rel="noreferrer">Eden Havila Kouame</a></li>
             <li><span class="lbl">GitHub</span><a href="https://github.com/EdenHavila" target="_blank" rel="noreferrer">EdenHavila</a></li>
             <li><span class="lbl">Localisation</span><span>Abidjan, Côte d'Ivoire</span></li>

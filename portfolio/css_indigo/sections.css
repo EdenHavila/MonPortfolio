@@ -248,7 +248,16 @@
 .cert-grid {
   display: grid;
   grid-template-columns: repeat(3, 1fr);
-  gap: 16px;
+  gap: 18px;
+  margin-bottom: 18px;
+}
+
+.cert-grid:last-child {
+  margin-bottom: 0;
+}
+
+.cert-grid + .cert-grid {
+  margin-top: 4px;
 }
 
 .cert-card {
